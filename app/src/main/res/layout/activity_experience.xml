@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.riddhi.riddhiresumeapp.ExperienceActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#5C5999">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience"
+        android:layout_marginStart="79dp"
+        android:textSize="28dp"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/experienceTitleTextView" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/headerLayout"
+        android:layout_below="@+id/experienceTitleTextView">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/logo"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageView"
+            android:layout_margin="5dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intern at BakBak, Inc."
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/toolbar"
+                android:layout_toEndOf="@+id/imageView"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan'16-May-16 "
+                android:textSize="14dp"
+                android:textColor="#a6a6a6"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/imageView" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout">
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardViewExperience"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I worked on Bakbak's android application from scratch. I worked on frontend and UI interaction and integrated many libraries.I was under good mentorship that helped in following good practices of Android Development."
+                    android:textSize="16dp"
+                    android:layout_margin="2dp"
+                    android:textAlignment="center"
+                    android:id="@+id/internshipText"/>
+                <android.support.v4.view.ViewPager
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/internshipText">
+                </android.support.v4.view.ViewPager>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BakBak"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_below="@+id/pager"
+                    android:id="@+id/bakbakTitleTextView"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bakbakTitleTextView"
+                    android:text="It helps you create temporary chatrooms. Each bakbak chatroom has a URL which can be shared on Twitter, Facebook, WhatsApp or even email. Anyone can simply click the URL to join the discussion. Each bakbak chatroom has a URL which can be shared on Twitter, Facebook, WhatsApp or even email. Anyone can simply click the URL to join the discussion. Chatroom can last maximum of 7 days, so you're not creating or joining yet another group, community or channel that stays on forever."
+                    android:textSize="16dp"
+                    android:layout_margin="2dp"
+                    android:textAlignment="center"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/nav_drawer_icon"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+    <!-- The navigation drawer -->
+    <ListView android:id="@+id/left_drawer1"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111"/>
+</android.support.v4.widget.DrawerLayout>

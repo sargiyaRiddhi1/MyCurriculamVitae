@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.riddhi.riddhiresumeapp.ExperienceActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#B0E57C">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Projects and Courses"
+        android:textSize="28dp"
+        android:textColor="#ffffff"
+        android:id="@+id/experienceTitleTextView"
+        android:layout_below="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardViewRinger"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="0dp"
+                android:elevation="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. Ringer(Android app)"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="1dp"/>
+                    <TextView
+                        android:layout_width="319dp"
+                        android:layout_height="wrap_content"
+                        android:text="October,2015"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#a6a6a6"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="An android app that automatically changes device’s audio profile when a specific text message is received from a trusted contact. Used Android framework to read incoming messages and sqlite databases to store user preferences and data."
+                            android:textColor="#a6a6a6"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardViewCineMarts"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="0dp"
+                android:elevation="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Cinemarts(Web Application)"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="1dp"/>
+                    <TextView
+                        android:layout_width="319dp"
+                        android:layout_height="wrap_content"
+                        android:text="January,2015"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#a6a6a6"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Online platforms for users to book movie tickets. Used .Net Framework and C# language for implementation. Database was handled in Microsoft SQL Server."
+                        android:textColor="#a6a6a6"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardViewPinstagram"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="0dp"
+                android:elevation="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Pinstagram(Web Application)"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="1dp"/>
+                    <TextView
+                        android:layout_width="319dp"
+                        android:layout_height="wrap_content"
+                        android:text="November,2014"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#a6a6a6"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Online application that consumes instagram api to search for pictures using tags and show them in pinterest layout. User can favorite the pictures to see them later. Used PHP as server side language and html css javascript and jquery on front-end; Mysql as Database."
+                        android:textColor="#a6a6a6"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardViewMCA"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="0dp"
+                android:elevation="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. Online Alumni Portal"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="1dp"/>
+                    <TextView
+                        android:layout_width="319dp"
+                        android:layout_height="wrap_content"
+                        android:text="October,2012"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#a6a6a6"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Online platform for alumnus of the college to connect with each other and college activities."
+                        android:textColor="#a6a6a6"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/nav_drawer_icon"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView2" />
+
+
+</RelativeLayout>
+
