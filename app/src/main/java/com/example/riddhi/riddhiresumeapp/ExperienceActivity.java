@@ -13,12 +13,16 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.mikepenz.materialdrawer.AccountHeader;
+import com.mikepenz.materialdrawer.AccountHeaderBuilder;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
+import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
+import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 
 public class ExperienceActivity extends AppCompatActivity {
     private ListView mDrawerList;
@@ -46,17 +50,27 @@ public class ExperienceActivity extends AppCompatActivity {
         new DrawerBuilder().withActivity(this).build();
 
         PrimaryDrawerItem item1 = new PrimaryDrawerItem().withIdentifier(1).withName("Acitvity1").withIcon(R.drawable.facebook);
-        SecondaryDrawerItem item2 = new SecondaryDrawerItem().withIdentifier(2).withName("Activity2");
+
+
+        AccountHeader headerResult = new AccountHeaderBuilder()
+                .withActivity(this)
+
+//                .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
+//                    @Override
+//                    public boolean onProfileChanged(View view, IProfile profile, boolean currentProfile) {
+//                        return false;
+//                    }
+//                })
+                .build();
 
         //create the drawer and remember the `Drawer` result object
         Drawer result = new DrawerBuilder()
                 .withActivity(this)
+                .withAccountHeader(headerResult)
                 .withToolbar(toolbar)
                 .addDrawerItems(
                         item1,
-                        new DividerDrawerItem(),
-                        item2,
-                        new SecondaryDrawerItem().withName("activities")
+                        new DividerDrawerItem()
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -71,6 +85,7 @@ public class ExperienceActivity extends AppCompatActivity {
                     }
                 })
                 .build();
+
 
     }
 

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_category1"
+            android:title="Experience" />
+        <item
+            android:id="@+id/nav_category2"
+            android:title="Education" />
+        <item
+            android:id="@+id/nav_category3"
+            android:title="Projects and Courses" />
+        <item
+            android:id="@+id/nav_category4"
+            android:title="Skills and Strengths" />
+        <item
+            android:id="@+id/nav_category5"
+            android:title="Academics and Curricular" />
+    </group>
+</menu>
