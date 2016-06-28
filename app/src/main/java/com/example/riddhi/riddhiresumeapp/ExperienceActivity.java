@@ -54,7 +54,10 @@ public class ExperienceActivity extends AppCompatActivity {
 
         AccountHeader headerResult = new AccountHeaderBuilder()
                 .withActivity(this)
-
+                .withHeaderBackground(R.drawable.nav_background)
+                .addProfiles(
+                        new ProfileDrawerItem().withName("Categories")
+                )
 //                .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
 //                    @Override
 //                    public boolean onProfileChanged(View view, IProfile profile, boolean currentProfile) {
